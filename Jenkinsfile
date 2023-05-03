@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Starting Config Server') {
       steps {
-        sh 'cd spring-petclinic-config-server'
+        sh 'cd ./spring-petclinic-config-server'
         sh 'pwd'
         sh '../mvnw spring-boot:run'
       }
